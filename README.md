@@ -6,11 +6,11 @@ Collection of Clean Vim ColorSchemes With Airline Themes.
 
 **Lightbright Muted**
 
-<img src="./images/lightbrightMuted.png" />
+<img width="800px" height="875px" src="./images/lightbrightMuted.png" />
 
 **Solarized Light**
 
-<img src="./images/solarizedLight.png" />
+<img width="800px" height="875px" src="./images/solarizedLight.png" />
 
 
 `lightBright`/`lightBrightMuted` are originally designed. `solarizedLight` is
