@@ -244,12 +244,15 @@ call <sid>hi("DiffNewFile",  s:gui0B, s:gui00, s:cterm0B, s:cterm00, "")
 call <sid>hi("DiffLine",     s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
 call <sid>hi("DiffRemoved",  s:gui08, s:gui00, s:cterm08, s:cterm00, "")
 
+
+" jordwalke: JS doc highlighting
+
 "jordwalke: JS doc highlighting
-hi jsDocTags guifg=#ab8870 guibg=NONE guisp=NONE gui=NONE ctermfg=228 ctermbg=NONE cterm=NONE
-hi jsDocType guifg=#a5a597 guibg=NONE guisp=NONE gui=NONE ctermfg=228 ctermbg=NONE cterm=NONE
-hi jsDocSeeTag guifg=#a5a597 guibg=NONE guisp=NONE gui=NONE ctermfg=228 ctermbg=NONE cterm=NONE
-hi jsDocTypeNoParam guifg=#a5a597 guibg=NONE guisp=NONE gui=NONE ctermfg=228 ctermbg=NONE cterm=NONE
-hi jsDocParam guifg=#858577 guibg=NONE guisp=NONE gui=BOLD ctermfg=228 ctermbg=NONE cterm=NONE
+call <sid>hi("jsDocTags",        s:gui03, s:gui00, s:cterm03, s:cterm00, "")
+call <sid>hi("jsDocType",        s:gui0C, s:gui00, s:cterm0C, s:cterm00, "")
+call <sid>hi("jsSeeTag",         s:gui03, s:gui00, s:cterm03, s:cterm00, "")
+call <sid>hi("jsDocParam",       s:gui05, s:gui00, s:cterm05, s:cterm00, "")
+call <sid>hi("jsDocTypeNoParam", s:gui0C, s:gui00, s:cterm0C, s:cterm00, "")
 
 " Ruby highlighting
 call <sid>hi("rubyAttribute",               s:gui0D, "", s:cterm0D, "", "")
