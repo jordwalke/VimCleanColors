@@ -64,7 +64,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-ocean"
+let g:colors_name = "spacegray"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
@@ -140,6 +140,10 @@ fun s:cterm(color)
 endfun
 
 " Vim editor colors
+" jordwalke: EnclosingExpr is for type system feedback (ocaml merlin etc).
+call <sid>hi("EnclosingExpr",        "", s:gui01, "", s:cterm01, "")
+" DebuggerCurrent used for debugger integration
+call <sid>hi("DebuggerCurrent",      "", "", "", "", "undercurl")
 call <sid>hi("Bold",          "", "", "", "", "bold")
 call <sid>hi("Debug",         s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Directory",     s:gui0D, "", s:cterm0D, "", "")
@@ -237,9 +241,9 @@ call <sid>hi("SpellCap",     "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellRare",    "", s:gui00, "", s:cterm00, "undercurl")
 
 " Additional diff highlighting
-call <sid>hi("DiffAdd",      s:gui0B, s:gui00, s:cterm0B, s:cterm00, "")
+call <sid>hi("DiffAdd",      s:gui07, s:gui0B, s:cterm0B, s:cterm00, "")
 call <sid>hi("DiffChange",   s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
-call <sid>hi("DiffDelete",   s:gui08, s:gui00, s:cterm08, s:cterm00, "")
+call <sid>hi("DiffDelete",   s:gui08, s:gui08, s:cterm08, s:cterm00, "")
 call <sid>hi("DiffText",     s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
 call <sid>hi("DiffAdded",    s:gui0B, s:gui00, s:cterm0B, s:cterm00, "")
 call <sid>hi("DiffFile",     s:gui08, s:gui00, s:cterm08, s:cterm00, "")
