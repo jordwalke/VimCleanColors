@@ -15,10 +15,10 @@ endif
 " GUI color definitions
 " jordwalke adjusting bg
 " let s:gui00 = "2b303b"
-let s:gui00 = "282c30"
+let s:gui00 = "2a2e34"
 " jordwalke:
 " let s:gui01 = "2c3034"
-let s:gui01 = "2e3236"
+let s:gui01 = "31353a"
 let s:gui02 = "4f5b66"
 let s:gui03 = "65737e"
 let s:gui04 = "a7adba"
