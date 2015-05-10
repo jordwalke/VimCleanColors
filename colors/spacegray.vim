@@ -18,7 +18,7 @@ endif
 let s:gui00 = "2a2e34"
 " jordwalke:
 " let s:gui01 = "2c3034"
-let s:gui01 = "31353a"
+let s:gui01 = "31353c"
 let s:gui02 = "4f5b66"
 let s:gui03 = "65737e"
 let s:gui04 = "a7adba"
