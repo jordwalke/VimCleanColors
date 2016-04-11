@@ -5,7 +5,7 @@
 " :colorscheme works in terminals supported by base16-shell scripts
 " User must set this variable in .vimrc
 "   let g:base16_shell_path=base16-builder/output/shell/
-if !has('gui')
+if !has('gui_running')
   if exists("g:base16_shell_path")
     execute "silent !/bin/sh ".g:base16_shell_path."/base16-ocean.dark.sh"
   endif
@@ -242,9 +242,9 @@ call <sid>hi("SpellRare",    "", s:gui00, "", s:cterm00, "undercurl")
 
 " Additional diff highlighting
 call <sid>hi("DiffAdd",      s:gui07, s:gui0B, s:cterm0B, s:cterm00, "")
-call <sid>hi("DiffChange",   s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
+call <sid>hi("DiffChange",   "", s:gui00, "", s:cterm00, "")
 call <sid>hi("DiffDelete",   s:gui08, s:gui08, s:cterm08, s:cterm00, "")
-call <sid>hi("DiffText",     s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
+call <sid>hi("DiffText",     "", s:gui01, s:cterm0D, s:cterm02, "")
 call <sid>hi("DiffAdded",    s:gui0B, s:gui00, s:cterm0B, s:cterm00, "")
 call <sid>hi("DiffFile",     s:gui08, s:gui00, s:cterm08, s:cterm00, "")
 call <sid>hi("DiffNewFile",  s:gui0B, s:gui00, s:cterm0B, s:cterm00, "")
